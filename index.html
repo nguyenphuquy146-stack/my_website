@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio mini - Hồ sơ cá nhân, kỹ năng và các dự án của Nguyễn Phú Quý" />
+  <title>Portfolio | Nguyễn Phú Quý</title>
+  <!-- LƯU Ý: luôn link tới file .css đã biên dịch, KHÔNG link tới .scss -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Skip link: hỗ trợ accessibility cho người dùng bàn phím -->
+  <a class="skip-link" href="#main">Bỏ qua điều hướng, tới nội dung chính</a>
+
+  <!-- ================= HEADER + NAV (Flexbox) ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#hero">&lt;NPQ /&gt;</a>
+
+      <nav class="navbar" aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          <li><a href="#about">Giới thiệu</a></li>
+          <li><a href="#skills">Kỹ năng</a></li>
+          <li><a href="#education">Học tập</a></li>
+          <li><a href="#projects">Dự án</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+      </nav>
+
+      <button id="theme-toggle" class="theme-toggle" type="button"
+              aria-label="Chuyển sang chế độ tối" aria-pressed="false">🌙</button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= HERO ================= -->
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <img class="avatar" src="assets/avatar.svg" width="180" height="180"
+             alt="Ảnh đại diện của Nguyễn Phú Quý" />
+        <div class="hero-text">
+          <p class="hero-greeting">Xin chào, mình là</p>
+          <h1>Nguyễn Phú Quý</h1>
+          <p class="hero-role">Sinh viên CNTT · Khai thác dữ liệu lớn · MSSV 23150350</p>
+          <p class="hero-desc">
+            Mình là sinh viên ngành <strong>Khai thác dữ liệu lớn</strong> tại
+            Trường Đại học Gia Định. Mình yêu thích việc phân tích dữ liệu để rút
+            ra những insight có giá trị, đồng thời xây dựng giao diện web trực
+            quan để trình bày chúng đến mọi người.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Xem dự án</a>
+            <a class="btn btn-outline" href="#contact">Liên hệ với mình</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GIỚI THIỆU ================= -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">Giới thiệu</h2>
+        <p class="section-subtitle">Một vài thông tin nhanh về mình</p>
+
+        <div class="about-grid">
+          <article class="about-card">
+            <h3>🎓 Học vấn</h3>
+            <p>
+              Sinh viên ngành <strong>Khai thác dữ liệu lớn</strong>,
+              Trường Đại học Gia Định.
+            </p>
+            <p><strong>MSSV:</strong> 23150350</p>
+          </article>
+          <article class="about-card">
+            <h3>💻 Định hướng</h3>
+            <p>
+              Data Analyst / Chuyên viên phân tích dữ liệu — tập trung vào
+              khai thác, làm sạch và trực quan hóa dữ liệu để hỗ trợ ra quyết định.
+            </p>
+          </article>
+          <article class="about-card">
+            <h3>🎬 Đời sống</h3>
+            <p><strong>Ngày sinh:</strong> 14/06/2005</p>
+            <p>
+              <strong>Sở thích:</strong> Phân tích dữ liệu, nghe nhạc và xem phim.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ KỸ NĂNG (render bằng JS - Phần 3) ============ -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Kỹ năng</h2>
+        <p class="section-subtitle">
+          Danh sách bên dưới được tạo bằng JavaScript từ mảng object (không hardcode trong HTML).
+        </p>
+        <!-- JS sẽ đổ dữ liệu vào đây -->
+        <div id="skills-list" class="skills-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ================= BẢNG QUÁ TRÌNH HỌC TẬP ================= -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="section-title">Quá trình học tập</h2>
+        <p class="section-subtitle">Kết quả các học phần tiêu biểu ngành Khai thác dữ liệu lớn</p>
+
+        <div class="table-wrap">
+          <table class="edu-table">
+            <caption>Bảng kết quả học tập theo học kỳ (thang điểm 10)</caption>
+            <thead>
+              <tr>
+                <th scope="col">Học kỳ</th>
+                <th scope="col">Học phần</th>
+                <th scope="col">Số tín chỉ</th>
+                <th scope="col">Điểm</th>
+                <th scope="col">Xếp loại</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>HK1 2023–2024</td>
+                <td>Nhập môn Lập trình</td>
+                <td>3</td>
+                <td>8.5</td>
+                <td>Giỏi</td>
+              </tr>
+              <tr>
+                <td>HK2 2023–2024</td>
+                <td>Cấu trúc dữ liệu &amp; Giải thuật</td>
+                <td>4</td>
+                <td>8.0</td>
+                <td>Giỏi</td>
+              </tr>
+              <tr>
+                <td>HK1 2024–2025</td>
+                <td>Cơ sở dữ liệu</td>
+                <td>3</td>
+                <td>8.2</td>
+                <td>Giỏi</td>
+              </tr>
+              <tr>
+                <td>HK1 2024–2025</td>
+                <td>Lập trình Web</td>
+                <td>3</td>
+                <td>9.0</td>
+                <td>Xuất sắc</td>
+              </tr>
+              <tr>
+                <td>HK2 2024–2025</td>
+                <td>Phân tích dữ liệu với Python</td>
+                <td>3</td>
+                <td>8.8</td>
+                <td>Giỏi</td>
+              </tr>
+              <tr>
+                <td>HK2 2024–2025</td>
+                <td>Khai thác dữ liệu lớn</td>
+                <td>4</td>
+                <td>8.5</td>
+                <td>Giỏi</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DỰ ÁN (fetch data.json - Phần 4) ============ -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Dự án</h2>
+        <p class="section-subtitle">
+          Dữ liệu được đọc từ <code>js/data.json</code> bằng fetch + async/await.
+        </p>
+
+        <!-- JS sẽ đổ dữ liệu vào đây -->
+        <div id="projects-grid" class="projects-grid" aria-live="polite"></div>
+
+        <!-- Thông báo lỗi khi fetch thất bại (Phần 4.4) -->
+        <p id="projects-error" class="alert alert-error" role="alert" hidden></p>
+      </div>
+    </section>
+
+    <!-- ================= FORM LIÊN HỆ ================= -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Liên hệ</h2>
+        <p class="section-subtitle">Gửi tin nhắn cho mình — mình sẽ phản hồi sớm nhất có thể.</p>
+
+        <form id="contact-form" class="contact-form" action="#" method="post">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fullname">Họ và tên <span aria-hidden="true">*</span></label>
+              <input type="text" id="fullname" name="fullname" placeholder="Nguyễn Văn A"
+                     required minlength="2" maxlength="50" pattern="[^0-9]{2,50}"
+                     title="Họ tên từ 2–50 ký tự và không chứa chữ số"
+                     autocomplete="name" />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email <span aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" placeholder="ban@example.com"
+                     required autocomplete="email" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Số điện thoại <span aria-hidden="true">*</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="0901234567"
+                     required pattern="(0|\+84)[0-9]{9}"
+                     title="Số điện thoại gồm 10 chữ số, bắt đầu bằng 0 (VD: 0901234567)"
+                     autocomplete="tel" />
+            </div>
+
+            <div class="form-group">
+              <label for="birthdate">Ngày sinh</label>
+              <input type="date" id="birthdate" name="birthdate" max="2010-12-31" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="topic">Chủ đề liên hệ</label>
+            <select id="topic" name="topic">
+              <option value="hop-tac">Hợp tác dự án</option>
+              <option value="tuyen-dung">Cơ hội thực tập / tuyển dụng</option>
+              <option value="gop-y">Góp ý về trang web</option>
+              <option value="khac">Khác</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Nội dung <span aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" rows="5" placeholder="Nhập nội dung tin nhắn (tối thiểu 10 ký tự)..."
+                      required minlength="10" maxlength="1000"></textarea>
+          </div>
+
+          <div class="form-checkbox">
+            <input type="checkbox" id="agree" name="agree" />
+            <label for="agree">Tôi đồng ý cho phép lưu thông tin để liên hệ lại.</label>
+          </div>
+
+          <div>
+            <button class="btn btn-primary" type="submit">Gửi tin nhắn</button>
+          </div>
+
+          <!-- Vùng thông báo kết quả validate bằng JS -->
+          <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        &copy; <span id="current-year">2025</span> Nguyễn Phú Quý — MSSV 23150350
+        · Trường Đại học Gia Định
+      </p>
+      <p>Xây dựng bằng HTML5, SCSS &amp; JavaScript · <a href="#main">Lên đầu trang</a></p>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

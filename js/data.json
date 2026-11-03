@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "ten": "Website Portfolio Cá nhân",
+    "moTa": "Trang giới thiệu bản thân xây dựng bằng HTML5 semantic, SCSS và JavaScript thuần, có dark mode và responsive.",
+    "congNghe": "HTML5, SCSS, JavaScript",
+    "namHoanThanh": 2025
+  },
+  {
+    "id": 2,
+    "ten": "Ứng dụng Quản lý Chi tiêu",
+    "moTa": "Ứng dụng ghi chép thu chi hằng ngày, dữ liệu được lưu lại trên trình duyệt bằng LocalStorage.",
+    "congNghe": "JavaScript, LocalStorage",
+    "namHoanThanh": 2025
+  },
+  {
+    "id": 3,
+    "ten": "Landing Page Sự kiện",
+    "moTa": "Trang giới thiệu sự kiện công nghệ với bố cục Flexbox/Grid, tối ưu hiển thị trên thiết bị di động.",
+    "congNghe": "HTML5, Flexbox, Grid",
+    "namHoanThanh": 2024
+  },
+  {
+    "id": 4,
+    "ten": "Todo List App",
+    "moTa": "Ứng dụng quản lý công việc cá nhân, hỗ trợ thêm/sửa/xóa và lọc công việc theo trạng thái.",
+    "congNghe": "JavaScript, DOM API, SCSS",
+    "namHoanThanh": 2024
+  }
+]
